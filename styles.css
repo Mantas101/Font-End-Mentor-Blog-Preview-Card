@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: FigTree, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    flex-wrap: wrap;
+    margin: 10rem 0 0 0;
+    overflow: auto;
+}
+.container{
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 8px 8px hsl(0, 0%, 7%);
+    width: clamp(20rem, 50%, 24rem);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.article-illustration {
+    width: 100%;
+    border-radius: 10px;
+}
+button {
+    margin-top: 1rem;
+    padding: 6px 12px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: hsl(47, 88%, 63%);
+}
+.date {
+    font-size: 0.9rem;
+}
+h1 {
+    font-size: clamp(1.2rem, 50%, 1.5rem);
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.grid-container p {
+    font-weight: 800;
+}
+.article-paragraph {
+    color: #9E9E9E;
+    line-height: 1.5rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+.avatar {
+    width: 2rem;
+}
+.attribution {
+    font-size: clamp(0.7rem, 1vw, 0.9rem);;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
